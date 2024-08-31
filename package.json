@@ -11,7 +11,9 @@
     "tailwind": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.3",
     "axios": "^1.7.5",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

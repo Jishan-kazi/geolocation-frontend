@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import GeoLocationInfo from './components/GeoLocationInfo.jsx';
 import IpAddress from './components/IpAddress.jsx';
+import axios from 'axios';
 
 const App = () => {
   const [fetchIp, setFetchIp] = useState(false);
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center justify-center">
+      
       <div className="mb-8">
         <button 
           onClick={() => setFetchIp(true)} 
@@ -23,6 +25,8 @@ const App = () => {
           </div>
         )}
       </div>
+
+      
 
       <div className="bg-white p-6 rounded-lg shadow-md max-w-md">
         <GeoLocationInfo />
